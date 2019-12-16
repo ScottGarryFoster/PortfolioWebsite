@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.portfolioTextContent
+{
+	color: #FFF;
+	text-shadow: 3px 5px 2px #474747, 2px 2px 2px #1C1C1C;	
+}
+@media only screen and (min-width: 768px)
+{
+	.porfolioTextSection
+	{
+		font-size:2em;	
+	}
+}
+
+@media only screen and (min-width: 600px)
+{
+	.porfolioTextSection
+	{
+		font-size:1em;	
+	}
+}

@@ -2002,13 +2002,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #A10EEC url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
+				background: #A10EEC url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -2017,12 +2017,15 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background: #fff;
+			background: #A10EEC url(../../images/MarioBros3Blue.jpg);
+			background-size:cover;
+			color: #eee;
+			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style2 .title {
-				background: #fff;
-				color: #484d55;
+				background: #787c8c;
+				color:#FFF;
 			}
 
 		.wrapper.style3 {
@@ -2061,7 +2064,8 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/banner.jpg") center center;
+		/*background: url("../../images/banner.jpg") center center;*/
+		background:url(../../images/80s%20Retro.png) center center;
 		background-size: cover;
 		padding: 0;
 	}
