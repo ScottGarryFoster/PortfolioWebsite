@@ -2029,15 +2029,51 @@ input, select, textarea {
 			}
 
 		.wrapper.style3 {
-			background: #f3f3f3 url("images/overlay.png");
+			background: #A10EEC url(../../images/PacmanBlur.jpg);
+			background-size:cover;
+			color: #eee;
+			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style3 .title {
-				background: #f3f3f3 url("images/overlay.png");
-				color: #484d55;
+				background: #191d37;
+				color:#FFF;
 			}
 
 			.wrapper.style3 .image {
+				border: solid 10px #fff;
+			}
+			
+			
+		.wrapper.style4 {
+			background: #A10EEC url(../../images/Project-rpg.jpg);
+			background-size:cover;
+			color: #eee;
+			color: rgba(255, 255, 255, 0.75);
+		}
+
+			.wrapper.style4 .title {
+				background: #3e6767;
+				color:#FFF;
+			}
+
+			.wrapper.style4 .image {
+				border: solid 10px #fff;
+			}
+			
+		.wrapper.style5 {
+			background: #A10EEC url(../../images/Starship_Blur.jpg);
+			background-size:cover;
+			color: #eee;
+			color: rgba(255, 255, 255, 0.75);
+		}
+
+			.wrapper.style5 .title {
+				background: #5f0540;
+				color:#FFF;
+			}
+
+			.wrapper.style5 .image {
 				border: solid 10px #fff;
 			}
 
