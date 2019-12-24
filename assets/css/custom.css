@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+.textShadow 
+{
+	text-shadow: #474747 3px 5px 2px, 2px 2px 2px rgba(206,89,55,0);
+}
+
+.graphicdesignheader 
+{
+	background-image:url(../../images/header.jpg);
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		padding: 6em 0 2em 0 ;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;	
+}
