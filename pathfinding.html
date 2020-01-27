@@ -38,8 +38,8 @@
 					 <!-- Nav --> 
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="index.html">Portfolio</a></li>
-                                <li class="current"><a href="index.html">Portfolio</a></li>
+								<li><a href="index.html">Portfolio</a></li>
+                                <li class="current"><a href="pathfinding.html">Pathfinding</a></li>
 								<!-- <li>
 									<a href="#">Dropdown</a>
 									<ul>
@@ -67,13 +67,23 @@
 
 				</section>
 <style type="text/css">
-  .gist {width:100% !important;}
+  /*.gist {width:100% !important;}
   .gist-file
   .gist-data {max-height: 400px; ;max-width: 100%;}
+  */
+  .gist {
+   max-width:width:100%;
+   overflow:auto;
+}
+
+.gist .blob-wrapper.data {
+   max-height:500px;
+   overflow:auto;
+}
 </style>
 			<!-- Main -->
-				<section id="main" class="wrapper style2">
-					<div class="title">Looking at the grid</div>
+				<section id="main" class="wrapper style2" style="background-image:none; background-color:#7A49B3;">
+					<div class="title" style="background-image:none; background-color:#7A49B3;">Looking at the grid</div>
 					<div class="container">
 					<div class="row">
                         <div class="col-6 col-12-medium">
@@ -109,33 +119,37 @@ To make sense of the difference between targetDirection and randomDirectionNumbe
 				</section>
                 
                 <!-- Starship Improvise -->
-				<section id="main" class="wrapper style5">
-					<div class="title">Starship Improvise Unity C#</div>
+				<section id="main" class="wrapper style5" style="background-image:none; background-color:#FFFE9C;">
+					<div class="title" style="background-image:none; background-color:#FFFE9C; color:#000">The main loop</div>
 					<div class="container">
 					<div class="row">
                         <div class="col-6 col-12-medium">
                             <section>
-                                <p><img src="images/StarshipImprovisePortfolio.Still001.png" style="width:100%"></p>
-                                <p><iframe  width="100%" height="300" src="https://www.youtube.com/embed/cPfoyb8VfIE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><!-- width="100%" -->
+                                <p>
+                                	<script src="https://gist.github.com/ScottGarryFoster/c36ce569246dc56983545639de64b99e.js"></script>
+                                </p><!-- width="100%" -->
                           </section>
                        </div>
                        <div class="col-6 col-12-medium">
                             <section class="porfolioTextSection">
-                                <h3 style="text-align:right; color:#FFF;">University Submission (2nd year)</h3>
-                                <p class="portfolioTextContent">
-                                As part of my (BSc) Games Development at Staffordshire university we were tasked with producing a Tower Defence game, designing it first, producing a marketing plan and finally creating the product or something like it.<br />
+                                <h3 style="text-align:right; color:#000;">Personal Project</h3>
+                                <p class="portfolioTextContentBlack">
+                                The pathfinding itself begins with finding a path between two points.<br />
+                                <br />
+Currentpoint is used to store the point we’re interested in and we begin with the origin. The loop occurs until I find the target or there’s nothing on the openlist left to search.<br /><br />
+The first thing within the loop is check all the directions around the point we are at, this method will check to see if there is a collision in which case that tile can go on the closed list, if it’s on the closed list it won’t go on the open list again and if it’s not a collision it’ll go on the open list as not explored. When things go onto the open list the costs are calculated.<br />
 <br />
-I put my heart and soul into something which looks like it could be a released game I'll be there are some corners cut to produce the result. Star-ship Improvise has two levels with four enemies of two different types, a star pathfinding separately between the types, towers which shoot or affect enemies in directly and save games.<br />
-<br />
-The game has within it the beginnings of a story, a soundtrack which progressively gets more upbeat as the waves progress, a world map screen, a level/tower/upgrade screen which has a in world preview of what you’re looking at and the game saves your progress automatically.<br />
-<br />
-The project taught me the idea of scaling down a project to get the core system instead of designing a much bigger project meant for multiple people. Additionally, although the system I built is solid, I did end up having to plug a few holes regarding enemies and level management which I wouldn’t have been happy releasing.
+I removed the current point from the open list and add it to the closed list so we don’t look into it again.<br />
+Then I search the open list to find the lowest F cost of an explored tile. <br /><br />
+.
+
+
 
                                 </p>
                                 <!--<p class="portfolioTextContent">
                                 <div class="portfolioTextContent porfolioGithubLogoText">
-                                <a href="https://github.com/ScottGarryFoster/UNI-YEAR1-Pacman" class="fab fa-github porfolioGithubLogo" target="_blank"></a>
-                                <a href="https://github.com/ScottGarryFoster/UNI-YEAR1-Pacman" class="portfolioTextContent" target="_blank">See full code and a more in-depth reflection on the project by clicking here.</a></div>
+                                <a href="https://github.com/ScottGarryFoster/UNI-YEAR1-MarioBros3" class="fab fa-github porfolioGithubLogo" target="_blank"></a>
+                                <a href="https://github.com/ScottGarryFoster/UNI-YEAR1-MarioBros3" class="portfolioTextContent" target="_blank">See full code and a more in-depth reflection on the project by clicking here.</a></div>
                                 </p>-->
                             </section>
                        </div>
