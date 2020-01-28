@@ -82,8 +82,8 @@
 }
 </style>
 			<!-- Main -->
-				<section id="main" class="wrapper style2" style="background-image:none; background-color:#7A49B3;">
-					<div class="title" style="background-image:none; background-color:#7A49B3;">Looking at the grid</div>
+				<section id="main" class="wrapper style2" style="background-image:none; background-color:#BF30AF;">
+					<div class="title" style="background-image:none; background-color:#BF30AF;">Looking at the grid</div>
 					<div class="container">
 					<div class="row">
                         <div class="col-6 col-12-medium">
@@ -119,12 +119,13 @@ To make sense of the difference between targetDirection and randomDirectionNumbe
 				</section>
                 
                 <!-- Starship Improvise -->
-				<section id="main" class="wrapper style5" style="background-image:none; background-color:#FFFE9C;">
-					<div class="title" style="background-image:none; background-color:#FFFE9C; color:#000">The main loop</div>
+				<section class="wrapper style5" style="background-image:none; background-color:#40103A;">
+					<div class="title" style="background-image:none; background-color:#40103A;">The main loop</div>
 					<div class="container">
 					<div class="row">
                         <div class="col-6 col-12-medium">
                             <section>
+								<p><img src="images/CPlusPlusPage/Pathfinding_example0.PNG" style="width:100%"></p>
                                 <p>
                                 	<script src="https://gist.github.com/ScottGarryFoster/c36ce569246dc56983545639de64b99e.js"></script>
                                 </p><!-- width="100%" -->
@@ -132,16 +133,21 @@ To make sense of the difference between targetDirection and randomDirectionNumbe
                        </div>
                        <div class="col-6 col-12-medium">
                             <section class="porfolioTextSection">
-                                <h3 style="text-align:right; color:#000;">Personal Project</h3>
-                                <p class="portfolioTextContentBlack">
+                                <p class="portfolioTextContent">
                                 The pathfinding itself begins with finding a path between two points.<br />
-                                <br />
-Currentpoint is used to store the point we’re interested in and we begin with the origin. The loop occurs until I find the target or there’s nothing on the openlist left to search.<br /><br />
+									<br />
+Currentpoint is used to store the point we’re interested in and we begin with the origin. The loop occurs until I find the target or there’s nothing on the openlist left to search.<br />
+									<br />
 The first thing within the loop is check all the directions around the point we are at, this method will check to see if there is a collision in which case that tile can go on the closed list, if it’s on the closed list it won’t go on the open list again and if it’s not a collision it’ll go on the open list as not explored. When things go onto the open list the costs are calculated.<br />
-<br />
-I removed the current point from the open list and add it to the closed list so we don’t look into it again.<br />
-Then I search the open list to find the lowest F cost of an explored tile. <br /><br />
-.
+									<br />
+I removed the current point from the open list and add it to the closed list, so we don’t look into it again.<br />
+									<br />
+Then I search the open list to find the lowest F cost of an explored tile. If two have the same F cost, then I find the lowest H which is just the distance from the target if there is no other collisions in the way.<br />
+									<br />
+If I find nothing there is no path and we return nothing. Also, before we check the open list if this is blank for whatever reason I don’t need to check the open list it’ll just return a blank list.
+Finally, we break out of the loop if we have the target and follow the path back by following the parent and return the completed list.<br />
+									<br />
+At the bottom I’ve pasted in the Pathfinding Costs just for context of the class.
 
 
 
@@ -158,178 +164,80 @@ Then I search the open list to find the lowest F cost of an explored tile. <br /
 				</section>
                 
                 <!-- Pacman -->
-				<section id="main" class="wrapper style3">
-					<div class="title">Pacman Recreation in C++</div>
+				<section class="wrapper style3" style="background-image:none; background-color:#802074;">
+					<div class="title" style="background-image:none; background-color:#802074;">Unexplained code and interface</div>
 					<div class="container">
 					<div class="row">
                         <div class="col-6 col-12-medium">
                             <section>
-                                <p><img src="images/PacmanScreenshot.jpg" style="width:100%"></p>
-                                <p><iframe  width="100%" height="300" src="https://www.youtube.com/embed/FB0SqXEZaF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><!-- width="100%" -->
+								<p><img src="images/CPlusPlusPage/Pathfinding_screen.PNG" style="width:100%"></p>
+                                <p>
+                                	<script src="https://gist.github.com/ScottGarryFoster/e6f5dd92e271f08f22d9046349bd60fa.js"></script>
+                                </p><!-- width="100%" -->
                           </section>
                        </div>
                        <div class="col-6 col-12-medium">
                             <section class="porfolioTextSection">
-                                <h3 style="text-align:right; color:#FFF;">University Submission (1st year)</h3>
                                 <p class="portfolioTextContent">
-                                Using a frame work based on OpenGL I recreated Pacman as part of my university course. It has Pacman, Ms. Pacman and some original levels, with recreated graphics and sound, I hope this recreation can live up-to the original.<br />
+                                Something yet to be explain is hidden behind Validate new direction which simply calls a method to detect if the test is in the grid or a collision, if so, add it uniquely to the closed list. If not and it’s not on the close list add it uniquely to the open list.<br />
+									<br />
+When it comes to calculating H cost, if I were to make diagonal movement possible, I’d use the distance between two vector calculation: A(squared) + B(squared) = C(Squared). Due to the idea that all I need is the cost it’d take to move straight to the target if there were no collisions though I can save a lot of memory space by simply finding difference between the vectors.<br />
+									<br />
+Within the file <a href="https://github.com/ScottGarryFoster/Portfolio-CodeExamples-PathfindingAStar/blob/master/CodeExamples-PathFinding/CodeExamples-PathFinding/CodeExamples-PathFinding.cpp" target="_blank">found here</a> is the main method where the screenshot code is run. This brings everything together. If you enter the number 1, a new maze is generated. If you enter 2, you can move the player or @ symbol, and if a path can be found a path will be attempted. If you enter a number outside of the grid it’ll just keep you where you are.<br />
+									<br />
+That is basically this pathfinding code, all of this is free to download and compile and was created with Visual Studio 2019 and maybe <a href="https://github.com/ScottGarryFoster/Portfolio-CodeExamples-PathfindingAStar">found here</a>.<br />
 <br />
-Considering this was my first project I feel the results are rather nice. I had a completed Pacman game with my own graphics and music without C++ knowledge. The levels load from file which is no small feat. and the overall quality of the product is impressive.<br />
-<br />
-Something I wanted in here from the start was A star path-finding. This is a technique of path-finding aiming to find the shortest route between two points. This system in my game works and even works through the screen wraps.<br />
-<br />
-There's a lot to improved, this was my first project using C++ from the ground up and overall it needs a clean up. I would say everything as a whole needs to be rethought up in terms of C++, in terms of polymorphism and a pointer based system.
+Below is more of a reflection on this project.
+
+
+
+
                                 </p>
-                                <p class="portfolioTextContent">
+                                <!--<p class="portfolioTextContent">
                                 <div class="portfolioTextContent porfolioGithubLogoText">
-                                <a href="https://github.com/ScottGarryFoster/UNI-YEAR1-Pacman" class="fab fa-github porfolioGithubLogo" target="_blank"></a>
-                                <a href="https://github.com/ScottGarryFoster/UNI-YEAR1-Pacman" class="portfolioTextContent" target="_blank">See full code and a more in-depth reflection on the project by clicking here.</a></div>
-                                </p>
+                                <a href="https://github.com/ScottGarryFoster/UNI-YEAR1-MarioBros3" class="fab fa-github porfolioGithubLogo" target="_blank"></a>
+                                <a href="https://github.com/ScottGarryFoster/UNI-YEAR1-MarioBros3" class="portfolioTextContent" target="_blank">See full code and a more in-depth reflection on the project by clicking here.</a></div>
+                                </p>-->
                             </section>
                        </div>
                    </div>
 					</div>
 				</section>
                 
-                <!-- Project-RPG -->
-				<section id="main" class="wrapper style4">
-					<div class="title">Project-RPG Unity C#</div>
+                
+			<!-- Pacman -->
+				<section class="wrapper style3" style="background-image:none; background-color:#40103A;">
+					<div class="title" style="background-image:none; background-color:#40103A;">Reflection on this project</div>
 					<div class="container">
 					<div class="row">
-                        <div class="col-6 col-12-medium">
-                            <section>
-                                <p><img src="images/ProjectRPG-DevLog1.Still001.png" style="width:100%"></p>
-                                <p><iframe  width="100%" height="300" src="https://www.youtube.com/embed/mypxWno0PNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><!-- width="100%" -->
-                          </section>
-                       </div>
-                       <div class="col-6 col-12-medium">
+                        
+                       <div class="col-12 col-12-medium">
                             <section class="porfolioTextSection">
-                                <h3 style="text-align:right; color:#FFF;">Personal Project (2019)</h3>
                                 <p class="portfolioTextContent">
-                                I started a project simply code named “Project-RPG” which is an attempt to create some mechanics which would fit nicely into an RPG.<br/>
-<br/>
-I’ve implemented some ray casting with the camera so that it finds the player, some basic animal AI, buildings which work inside with the camera and door, a tree which can be chopped down and the beginnings of an inventory system.<br/>
-<br/>
-The camera is by no means perfect and although it will zoom in, I need a more reactive system, one which not only finds the player but also attempts to find the highest zoom level it can. Also I could do with adding lerps in the movement.<br/>
-<br/>
-The animal AI I’m rather happy with even though it’s basic. I think extending that script into something I could apply to more things would be really nice.<br/>
-<br/>
-The buildings are fine however I’m going to need to look into a better way to have buildings work. This could be by taking control away from the player when entering/leaving and this would make doing such a little less janky. Also I need some UI for the door control.
+                                Before university I’d tried A Star pathfinding in RPG Maker and failed many times and barely had a working version which used a lot of memory and was not efficient.<br /><br />
+									When coming to university something I was keen on was attempting it with my Pacman project and looking back on the code I wrote at the start of my course now at in my second year I’m not as embarrassed as I think I would be as I feel that pathfinding is just a skill you need to get better at.<br /><br />
+Having made pathfinding in C# with lists I attempted to make this work with C++ lists however honestly I feel like the code isn’t that much smaller than it was in my Pacman. I’m happy with the main method but it took a lot of setup to get to the end point, there are far more classes than perhaps are needed, far more enums and far more memory.<br /><br />
+I’m not making this project to become better at Mazes, maybe that’d be a project for the future, but the grid generation system for what it is I like. It’s simple and gets the concept out there the only issue I have is the constant confusion over row and y along with col and x. I need to make these concepts more consistent and plan ahead for these being consistent.<br /><br />
+Overall happy even if I know with more planning I could do it far better.
+
+
+
+
+
                                 </p>
-                                <p class="portfolioTextContent">
+                                <!--<p class="portfolioTextContent">
                                 <div class="portfolioTextContent porfolioGithubLogoText">
-                                <a href="https://github.com/ScottGarryFoster/Project-RPG" class="fab fa-github porfolioGithubLogo" target="_blank"></a>
-                                <a href="https://github.com/ScottGarryFoster/Project-RPG" class="portfolioTextContent" target="_blank">See full code and a more in-depth reflection on the project by clicking here.</a></div>
-                                </p>
+                                <a href="https://github.com/ScottGarryFoster/UNI-YEAR1-MarioBros3" class="fab fa-github porfolioGithubLogo" target="_blank"></a>
+                                <a href="https://github.com/ScottGarryFoster/UNI-YEAR1-MarioBros3" class="portfolioTextContent" target="_blank">See full code and a more in-depth reflection on the project by clicking here.</a></div>
+                                </p>-->
                             </section>
                        </div>
                    </div>
 					</div>
 				</section>
 
-			<!-- Highlights -->
-				<!-- <section id="highlights" class="wrapper style3">
-					<div class="title">The Endorsements</div>
-					<div class="container">
-						<div class="row aln-center">
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<h3><a href="#">Aliquam diam consequat</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</div>
-				</section>
-
 			<!-- Footer -->
 				<section id="footer" class="wrapper">
-					<div class="title">Education and Work History</div>
-					<div class="container">
-						<header class="style1">
-                        
-							<h2 style="text-align:left">Education</h2>
-                          <div class="row aln-center">
-                                <div class="col-3 col-12-medium">
-                              <img src="images/staffs_logo.png" width="150" height="156">
-                              </div>
-                            <div class="col-3 col-12-medium">
-                                <h3>STAFFORDSHIRE UNIVERSITY</h3>
-                                2017 - 2022
-                                </div>
-                            <div class="col-6 col-12-medium">
-                                I am currently studying BSc (Hons) Computer Games Development at Staffordshire University, learning C++, fundamentals of games development and software engineering. I achieved a 1st in all my first year modules.
-                                </div>
-                          </div>
-                          
-                          <div class="row aln-center">
-                                <div class="col-3 col-12-medium">
-                              <img src="images/StokeOnTrentCollege.png" width="150" height="94">
-                              </div>
-                            <div class="col-3 col-12-medium">
-                                <h3>STOKE-ON-TRENT COLLEGE</h3>
-                                2007 - 2009
-                                </div>
-                            <div class="col-6 col-12-medium">
-                                I studied at Stoke-on-Trent college focusing on Software with some light programming during a Diploma in ICT and Software. I achieved a C grade.
-                                </div>
-                          </div>
-                          
-                              <div class="row aln-center">
-                                <div class="col-3 col-12-medium">
-                              
-                              </div>
-                            <div class="col-3 col-12-medium">
-                                <h3>BROWNHILLS HIGH SCHOOL</h3>
-                                2002 - 2007
-                                </div>
-                            <div class="col-6 col-12-medium">
-                                I received GCSEs in English (C), Maths (C), Science (C) and ICT (B) from Brownhills, with overall 7 GCSEs C or higher.
-                                </div>
-                          </div>
-                          
-						</header>
-                        
-                        <header class="style1">
-                        
-							<h2 style="text-align:left">Work</h2>
-                          <div class="row aln-center">
-                                <div class="col-3 col-12-medium">
-                              <img src="images/posm-logo-white-colourcutout.png" width="151" height="100">
-                              </div>
-                            <div class="col-3 col-12-medium">
-                                <h3>POSM UK Ltd</h3>
-                                2019 - Present
-                            </div>
-                            <div class="col-6 col-12-medium">
-                                I worked with an award winning team on their software and production of new software.
-                            </div>
-                          </div>
-						</header>
                         <div align="center" >
                               <a href="http://www.linkedin.com/in/scottgarryfoster" target="_blank" class="icon brands fa-linkedin alt" style="font-size:2em;"><span class="label" >Dribbble</span>
                                 </a>
