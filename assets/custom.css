@@ -87,6 +87,80 @@ a.portfolioTextContentBlack:visted
 	}
 }
 
+@media only screen and (max-width: 1000px)
+{
+	.logo_banner
+	{
+		background-image:url(../images/bannerImage_500.png);
+		background-repeat:no-repeat;
+		background-position:top center;
+		background-size:contain;
+		/*background-color:#06C;*/
+		width:100%;
+		height:100px;
+	}
+	
+	.tagline_banner
+	{
+		background-image:url(../images/taglineImage_350.png);
+		background-repeat:no-repeat;
+		background-position:top center;
+		background-size:contain;
+		/*background-color:#06C;*/
+		width:100%;
+		height:20px;
+	}
+}
+@media only screen and (min-width: 1001px) and (max-width: 1200px)
+{
+	.logo_banner
+	{
+		background-image:url(../images/bannerImage.png);
+		background-repeat:no-repeat;
+		background-position:top center;
+		background-size:contain;
+		/*background-color:#699;*/
+		width:100%;
+		height:150px;
+	}
+	
+	.tagline_banner
+	{
+		background-image:url(../images/taglineImage.png);
+		background-repeat:no-repeat;
+		background-position:top center;
+		background-size:contain;
+		/*background-color:#06C;*/
+		width:100%;
+		height:30px;
+	}
+}
+
+@media only screen and (min-width: 1201px)
+{
+	.logo_banner
+	{
+		background-image:url(../images/bannerImage.png);
+		background-repeat:no-repeat;
+		background-position:top center;
+		background-size:contain;
+		/*background-color:#699;*/
+		width:100%;
+		height:200px;
+	}
+	
+		.tagline_banner
+	{
+		background-image:url(../images/taglineImage.png);
+		background-repeat:no-repeat;
+		background-position:top center;
+		background-size:contain;
+		/*background-color:#06C;*/
+		width:100%;
+		height:40px;
+	}
+}
+
 .porfolioGithubLogo
 {
 	color:#FFF;	
