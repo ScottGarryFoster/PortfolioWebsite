@@ -2638,6 +2638,7 @@ input, select, textarea {
 				width: 100%;
 				z-index: 10001;
 				background: none;
+				visibility:hidden;
 			}
 
 				#titleBar .title {
