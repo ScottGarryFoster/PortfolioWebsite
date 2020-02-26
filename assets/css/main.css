@@ -2529,6 +2529,7 @@ input, select, textarea {
 
 	#navPanel, #titleBar {
 		display: none;
+		visibility:hidden;
 	}
 
 	@media screen and (max-width: 980px) {
