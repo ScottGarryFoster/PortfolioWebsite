@@ -2076,6 +2076,22 @@ input, select, textarea {
 			.wrapper.style5 .image {
 				border: solid 10px #fff;
 			}
+			
+					.wrapper.style6 {
+			background: #A10EEC url(../../images/Jones.jpg);
+			background-size:cover;
+			color: #eee;
+			color: rgba(255, 255, 255, 0.75);
+		}
+
+			.wrapper.style6 .title {
+				background: #000;
+				color:#FFF;
+			}
+
+			.wrapper.style6 .image {
+				border: solid 10px #fff;
+			}
 
 /* Page Wrapper */
 
