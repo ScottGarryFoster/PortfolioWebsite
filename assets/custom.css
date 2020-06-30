@@ -196,6 +196,41 @@ a.porfolioGithubLogo:active
 	text-decoration:none;	
 }
 
+.porfolioYoutubeLogo
+{
+	color:#F00;	
+	font-size:2em;
+}
+
+.porfolioYoutubebLogoText
+{
+	color:#FFF;	
+	font-size:1em;
+	text-align:center;
+}
+
+a.porfolioYoutubeLogo:link
+{
+	color:#FFF;
+	text-decoration:none;	
+}
+a.porfolioYoutubeLogo:visted
+{
+	color:#FFF;
+	text-decoration:none;	
+}
+a.porfolioYoutubeLogo:hover
+{
+	color:#F00;
+	text-decoration:none;	
+}
+
+a.porfolioYoutubeLogo:active
+{
+	color:#F00;
+	text-decoration:none;	
+}
+
 .wrapper.starship1 {
 	background: #A10EEC url(../images/Starship_Blur_1.jpg);
 	background-size:cover;
