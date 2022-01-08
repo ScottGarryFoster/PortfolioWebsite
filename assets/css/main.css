@@ -221,7 +221,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
-		
+
 	}
 
 		.row > * {
@@ -2044,24 +2044,24 @@ input, select, textarea {
 			.wrapper.style3 .image {
 				border: solid 10px #fff;
 			}
-			
-			
+
+
 		.wrapper.style4 {
-			background: #A10EEC url(../../images/Project-rpg.jpg);
+			background: #A10EEC url(../../images/NeverEndingScrolly.jpg);
 			background-size:cover;
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style4 .title {
-				background: #3e6767;
-				color:#FFF;
+				background: #908890;
+				color:#f4f4f4;
 			}
 
 			.wrapper.style4 .image {
 				border: solid 10px #fff;
 			}
-			
+
 		.wrapper.style5 {
 			background: #A10EEC url(../../images/Starship_Blur.jpg);
 			background-size:cover;
@@ -2077,7 +2077,7 @@ input, select, textarea {
 			.wrapper.style5 .image {
 				border: solid 10px #fff;
 			}
-			
+
 					.wrapper.style6 {
 			background: #A10EEC url(../../images/Jones.jpg);
 			background-size:cover;
