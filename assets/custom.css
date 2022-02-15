@@ -4,20 +4,20 @@
 .portfolioTextContent
 {
 	color: #FFF;
-	text-shadow: 3px 5px 2px #474747, 2px 2px 2px #1C1C1C;	
+	text-shadow: 3px 5px 2px #474747, 2px 2px 2px #1C1C1C;
 }
 
 a.portfolioTextContent:link
 {
 	color: #FFF;
-	text-shadow: 3px 5px 2px #474747, 2px 2px 2px #1C1C1C;	
+	text-shadow: 3px 5px 2px #474747, 2px 2px 2px #1C1C1C;
 	text-decoration:none;
 }
 
 a.portfolioTextContent:hover
 {
 	color: #FFF;
-	text-shadow: 3px 5px 2px #474747, 2px 2px 2px #1C1C1C;	
+	text-shadow: 3px 5px 2px #474747, 2px 2px 2px #1C1C1C;
 	text-decoration:underline;
 }
 
@@ -25,14 +25,14 @@ a.portfolioTextContent:active
 {
 	color: #FFF;
 	text-shadow: 3px 5px 2px #474747, 2px 2px 2px #1C1C1C;
-	text-decoration:none;	
+	text-decoration:none;
 }
 
 a.portfolioTextContent:visted
 {
 	color: #FFF;
 	text-shadow: 3px 5px 2px #474747, 2px 2px 2px #1C1C1C;
-	text-decoration:none;	
+	text-decoration:none;
 }
 
 
@@ -40,20 +40,20 @@ a.portfolioTextContent:visted
 .portfolioTextContentBlack
 {
 	color: #000;
-	text-shadow: 3px 5px 2px #FEFFF2, 2px 2px 2px #FEFFF2;	
+	text-shadow: 3px 5px 2px #FEFFF2, 2px 2px 2px #FEFFF2;
 }
 
 a.portfolioTextContentBlack:link
 {
 	color: #000;
-	text-shadow: 3px 5px 2px #FEFFF2, 2px 2px 2px #FEFFF2;	
+	text-shadow: 3px 5px 2px #FEFFF2, 2px 2px 2px #FEFFF2;
 	text-decoration:none;
 }
 
 a.portfolioTextContentBlack:hover
 {
 	color: #000;
-	text-shadow: 3px 5px 2px #FEFFF2, 2px 2px 2px #FEFFF2;	
+	text-shadow: 3px 5px 2px #FEFFF2, 2px 2px 2px #FEFFF2;
 	text-decoration:underline;
 }
 
@@ -61,29 +61,54 @@ a.portfolioTextContentBlack:active
 {
 	color: #000;
 	text-shadow: 3px 5px 2px #FEFFF2, 2px 2px 2px #FEFFF2;
-	text-decoration:none;	
+	text-decoration:none;
 }
 
 a.portfolioTextContentBlack:visted
 {
 	color: #000;
 	text-shadow: 3px 5px 2px #FEFFF2, 2px 2px 2px #FEFFF2;
-	text-decoration:none;	
+	text-decoration:none;
+}
+.mobileHidden
+{
+	display: inherit;
+}
+
+.mobileShown
+{
+	display: none;
 }
 
 @media only screen and (min-width: 768px)
 {
 	.porfolioTextSection
 	{
-		font-size:2em;	
+		font-size:2em;
 	}
+
 }
 
 @media only screen and (min-width: 600px)
 {
 	.porfolioTextSection
 	{
-		font-size:1em;	
+		font-size:1em;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 736px)
+{
+	.mobileHidden
+	{
+		display: none;
+	}
+	.mobileShown
+	{
+		display: inherit;
 	}
 }
 
@@ -99,7 +124,7 @@ a.portfolioTextContentBlack:visted
 		width:100%;
 		height:100px;
 	}
-	
+
 	.tagline_banner
 	{
 		background-image:url(../images/taglineImage_350.png);
@@ -123,7 +148,7 @@ a.portfolioTextContentBlack:visted
 		width:100%;
 		height:150px;
 	}
-	
+
 	.tagline_banner
 	{
 		background-image:url(../images/taglineImage.png);
@@ -148,7 +173,7 @@ a.portfolioTextContentBlack:visted
 		width:100%;
 		height:200px;
 	}
-	
+
 		.tagline_banner
 	{
 		background-image:url(../images/taglineImage.png);
@@ -163,13 +188,13 @@ a.portfolioTextContentBlack:visted
 
 .porfolioGithubLogo
 {
-	color:#FFF;	
+	color:#FFF;
 	font-size:2em;
 }
 
 .porfolioGithubLogoText
 {
-	color:#FFF;	
+	color:#FFF;
 	font-size:1em;
 	text-align:center;
 }
@@ -177,34 +202,34 @@ a.portfolioTextContentBlack:visted
 a.porfolioGithubLogo:link
 {
 	color:#FFF;
-	text-decoration:none;	
+	text-decoration:none;
 }
 a.porfolioGithubLogo:visted
 {
 	color:#FFF;
-	text-decoration:none;	
+	text-decoration:none;
 }
 a.porfolioGithubLogo:hover
 {
 	color:#A10EEC;
-	text-decoration:none;	
+	text-decoration:none;
 }
 
 a.porfolioGithubLogo:active
 {
 	color:#A10EEC;
-	text-decoration:none;	
+	text-decoration:none;
 }
 
 .porfolioYoutubeLogo
 {
-	color:#F00;	
+	color:#F00;
 	font-size:2em;
 }
 
 .porfolioYoutubebLogoText
 {
-	color:#FFF;	
+	color:#FFF;
 	font-size:1em;
 	text-align:center;
 }
@@ -212,23 +237,23 @@ a.porfolioGithubLogo:active
 a.porfolioYoutubeLogo:link
 {
 	color:#FFF;
-	text-decoration:none;	
+	text-decoration:none;
 }
 a.porfolioYoutubeLogo:visted
 {
 	color:#FFF;
-	text-decoration:none;	
+	text-decoration:none;
 }
 a.porfolioYoutubeLogo:hover
 {
 	color:#F00;
-	text-decoration:none;	
+	text-decoration:none;
 }
 
 a.porfolioYoutubeLogo:active
 {
 	color:#F00;
-	text-decoration:none;	
+	text-decoration:none;
 }
 
 .wrapper.starship1 {
@@ -246,7 +271,7 @@ a.porfolioYoutubeLogo:active
 	.wrapper.starship1 .image {
 		border: solid 10px #fff;
 	}
-	
+
 html {
   scroll-behavior: smooth;
 }
