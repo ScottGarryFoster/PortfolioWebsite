@@ -2314,6 +2314,7 @@ input, select, textarea {
 		height: 12em;
 		/*background: url("../../images/banner.jpg") center center;*/
 		background:url(../../images/80s%20Retro.jpg) center center;
+		background-size: cover;
 	}
 
 		#header .logo {
@@ -2543,7 +2544,7 @@ input, select, textarea {
 
 	#main {
 		background: #111846;
-		border-top: solid 5px #00d145;
+		border-top: solid 5px #d10185;
 		border-bottom: solid 5px #01cfd1;
 		border-top-width: 35px;
 		border-bottom-width: 10px;
