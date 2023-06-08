@@ -11,6 +11,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style type="text/css">
+			#banner
+			{
+				background-image: url("images/CyberpunkBackground.jpg");
+				background-size: cover;
+				background-position: center center;
+			}
+
+			#banner .inner
+			{
+				background-color: rgba(67, 28, 83, 0.75);
+			}
+
+			.image:before
+			{
+				background: none;
+			}
+
+			.hideWhenNarrow
+			{
+				display: inherit;
+			}
+			@media screen and (min-width: 841px) {
+
+				.hideWhenNarrow
+				{
+					display: none;
+				}
+			}
+		</style>
 	</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
@@ -57,25 +88,56 @@
 					<div class="inner">
 
 						<header>
-							<h2>TWENTY</h2>
+							<h2>SCOTT FOSTER</h2>
 						</header>
-						<p>This is <strong>Twenty</strong>, a free
+						<p>Games developer, professionally taught
 						<br />
-						responsive template
-						<br />
-						by <a href="http://html5up.net">HTML5 UP</a>.</p>
+						working in triple A development.
+						<!--
 						<footer>
 							<ul class="buttons stacked">
 								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
 							</ul>
 						</footer>
-
+						-->
 					</div>
 
 				</section>
 
 			<!-- Main -->
 				<article id="main">
+
+					<!-- Two -->
+					<section class="wrapper style1 container special">
+						<div class="row">
+							<div class="hideWhenNarrow col-3-narrower"></div>
+							<div class="col-3 col-6-narrower">
+
+								<section style="text-align: center">
+									<header>
+									<a href="#" class="image featured" ><img src="images/ScottFoster_Headshot.png" alt="" /></a>
+									Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit
+										dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+									</header>
+
+								</section>
+
+							</div>
+							<div class="hideWhenNarrow col-3-narrower"></div>
+							<div class="col-9 col-12-narrower">
+
+								<section>
+									<span class="icon solid featured fa-check"></span>
+									<header>
+										<h3>Also Something</h3>
+									</header>
+									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+								</section>
+
+							</div>
+
+						</div>
+					</section>
 
 					<header class="special container">
 						<span class="icon solid fa-chart-bar"></span>
@@ -89,6 +151,8 @@
 						<br />
 						released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
 					</header>
+
+
 
 					<!-- One -->
 						<section class="wrapper style2 container special-alt">

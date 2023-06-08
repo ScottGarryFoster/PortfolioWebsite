@@ -293,6 +293,14 @@ input, select, textarea {
 			order: -1;
 		}
 
+		.row > .col-0 {
+			width: 0%;
+		}
+
+		.row > .off-0 {
+			margin-left: 0%;
+		}
+
 		.row > .col-1 {
 			width: 8.33333%;
 		}
@@ -779,6 +787,14 @@ input, select, textarea {
 
 				.row > .imp-normal {
 					order: -1;
+				}
+
+				.row > .col-0-normal {
+					width: 0%;
+				}
+
+				.row > .off-1-normal {
+					margin-left: 0%;
 				}
 
 				.row > .col-1-normal {
