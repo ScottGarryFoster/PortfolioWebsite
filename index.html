@@ -13,42 +13,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<script src="https://kit.fontawesome.com/626ce1c3ce.js" crossorigin="anonymous"></script>
-
-		<style type="text/css">
-			#banner
-			{
-				background-image: url("images/CyberpunkBackground.jpg");
-				background-size: cover;
-				background-position: center center;
-			}
-
-			#banner .inner
-			{
-				background-color: rgba(67, 28, 83, 0.75);
-			}
-
-			.image:before
-			{
-				background: none;
-			}
-
-			.hideWhenNarrow
-			{
-				display: inherit;
-			}
-			@media screen and (min-width: 841px) {
-
-				.hideWhenNarrow
-				{
-					display: none;
-				}
-			}
-
-			a.fa-brands:link, a.fa-brands:visited, a.fa-brands:hover, a.fa-brands:active
-			{
-				text-decoration: none;
-			}
-		</style>
+		<link rel="stylesheet" href="custom.css" />
 	</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
@@ -58,10 +23,12 @@
 					<h1 id="logo"><a href="index.html">Scott Foster <span>Games Developer</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">Active</a></li>
-							<li class="current"><a href="index.html">University</a></li>
-							<li class="current"><a href="index.html">Educational</a></li>
-							<li class="current"><a href="index.html">Ethics</a></li>
+							<li class="current"><a href="index.html">Portfolio</a></li>
+							<li><a href="index.html">Independent</a></li>
+							<li><a href="index.html">University</a></li>
+							<li><a href="index.html">Educational</a></li>
+							<li><a href="index.html">Ethics</a></li>
+							<!--<li><a href="#" class="button primary">Contact</a></li>-->
 							<!--<li class="submenu">
 								<a href="#">Layouts</a>
 								<ul>
@@ -81,7 +48,6 @@
 									</li>
 								</ul>
 							</li>-->
-							<li><a href="#" class="button primary">Contact</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -128,13 +94,23 @@
 									<a href="#" class="image featured" ><img src="images/ScottFoster_Headshot.png" alt="" /></a>
 									</header>
 
-									<ul class="icons">
+
+										<ul class="icons">
+											<li><a href="https://www.linkedin.com/in/scottgarryfoster/" class="image socialicon" ><img src="images/social/linkedin-yellow4.png" alt="" /></a></li>
+											<li><a href="https://twitter.com/RuthlessRanger" class="image socialicon" ><img src="images/social/twitter-yellow4.png" alt="" /></a></li>
+											<li><a href="https://www.youtube.com/@ScottGarryFoster" class="image socialicon" ><img src="images/social/youtube-yellow4.png" alt="" /></a></li>
+											<li><a href="https://github.com/ScottGarryFoster" class="image socialicon" ><img src="images/social/github-yellow4.png" alt="" /></a></li>
+											<li><a href="https://blog.scottgarryfoster.com" class="image socialicon" ><img src="images/social/medium-yellow4.png" alt="" /></a></li>
+										</ul>
+
+									<!--<ul class="featured-icons">
 										<li><a href="https://www.linkedin.com/in/scottgarryfoster/" class="fa-brands fa-linkedin-in fa-lg">&nbsp;</a></li>
 										<li><a href="https://twitter.com/RuthlessRanger" class="fa-brands fa-twitter fa-lg">&nbsp;</a></li>
 										<li><a href="https://www.youtube.com/@ScottGarryFoster" class="fa-brands fa-youtube fa-lg">&nbsp;</a></li>
 										<li><a href="#" class="fa-brands fa-github-alt fa-lg">&nbsp;</a></li>
 										<li><a href="#" class="fa-brands fa-medium fa-lg">&nbsp;</a></li>
 									</ul>
+									-->
 
 								</section>
 
@@ -182,6 +158,7 @@
 						</div>
 					</section>
 
+					<!--
 					<header class="special container">
 						<span class="icon solid fa-chart-bar"></span>
 						<h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP
@@ -194,10 +171,10 @@
 						<br />
 						released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
 					</header>
+					-->
 
 
-
-					<!-- One -->
+					<!-- One
 						<section class="wrapper style2 container special-alt">
 							<div class="row gtr-50">
 								<div class="col-8 col-12-narrower">
@@ -227,8 +204,83 @@
 								</div>
 							</div>
 						</section>
+					-->
+					<!-- One -->
+					<section class="wrapper style2 container special-alt retro1">
+						<div class="row gtr-50">
+							<div class="col-8 col-12-narrower">
 
-					<!-- Two -->
+								<header>
+									<h2><strong>JONES RAIDER IN UE4 C++</strong></h2>
+								</header>
+								<p style="text-align: right">University Group Submission (2nd year) (5 people in group)</p>
+								<p>
+									This project was a group project with 5 people in Unreal Engine 4. My focus was in Puzzle Elements, the moving blocks, levers/buttons, ground blades and swinging blades, rotating platforms, in rooms doors and the moving spikes.
+								</p>
+								<p>
+									I also designed and implemented four puzzle rooms which can be seen in the video, the two tutorial puzzle rooms (which I don’t count as part of the four), the swinging blade room, rotating platform room, moving block room and the second moving spike room in the video.
+								</p>
+								<p>
+									I integrated and assisted in delegates with the room interface system, the activation code, tutorial UI and sound effects. Everything apart from the sound was in C++ apart from what would make sense in to have in Blueprint.
+								</p>
+								<p>
+									I’m happy with the product however it desperately needs more rooms, a mini-map and the lack of sounds in certain locations is glaring due to how many sounds are in other areas. This project also taught me a lot about working on a large project in a group; in the future, organisation and taking the agile approach more to heart would have created a better overall product.
+								</p>
+								<footer>
+									<ul class="buttons">
+										<li><a href="https://www.youtube.com/watch?v=nUiZX1j22vw" class="button">See full gameplay and reflection here</a></li>
+									</ul>
+								</footer>
+
+							</div>
+							<div class="col-4 col-12-narrower imp-narrower">
+								<a class="image featured" ><img src="images/JonesImage.jpg" alt="" /></a>
+								<iframe width="100%" height="300" src="https://www.youtube.com/embed/elH9GVz9I00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+							</div>
+						</div>
+					</section>
+
+					<!-- One -->
+					<section class="wrapper style2 container special-alt retro2">
+						<div class="row gtr-50">
+							<div class="col-4 col-12-narrower imp-narrower">
+								<a class="image featured" ><img src="images/SuperMarioImage1.jpg" alt="" /></a>
+								<iframe width="100%" height="300" src="https://www.youtube.com/embed/_n2T5CRX2E4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+							</div>
+							<div class="col-8 col-12-narrower">
+
+								<header style="text-align: right">
+									<h2><strong>SUPER MARIO BROS. IN SDL C++</strong></h2>
+								</header>
+								<p>University Submission (1st year)</p>
+								<p style="text-align: right">
+									Written in SDL in C++ my goal was to recreate the first level of Super Mario Bros. 3 as part of my University course work.
+								</p>
+								<p style="text-align: right">
+									The end result was the first level, with working enemies, split screen multiplayer, music/sound and a fully working level editor.
+								</p>
+								<p style="text-align: right">
+									I included external controller support for SNES and NES controllers, multiplayer where one player can save the other if needed. Both players can pick up items, fire shells or even complete the level.
+								</p>
+								<p style="text-align: right">
+									The level editor has all the blocks included, allows complete customisation of the layout, standard tools such as pencil/eraser and more advanced tools which interact with the functionality of the game such as question mark blocks. Play your game instantly and save them to be included in the main game-play mode.
+								</p>
+								<p style="text-align: right">
+									Completed in just over 3 months the project taught me a lot about programming in C++ and invaluable games programming skills.
+								</p>
+								<footer style="text-align: right">
+									<ul class="buttons">
+										<li><a href="https://github.com/ScottGarryFoster/UNI-YEAR1-MarioBros3" class="button">
+											Full code and a more in-depth reflection on the project
+										</a></li>
+									</ul>
+								</footer>
+
+							</div>
+						</div>
+					</section>
+
+					<!-- Two
 						<section class="wrapper style1 container special">
 							<div class="row">
 								<div class="col-4 col-12-narrower">
@@ -266,8 +318,8 @@
 								</div>
 							</div>
 						</section>
-
-					<!-- Three -->
+-->
+					<!-- Three
 						<section class="wrapper style3 container special">
 
 							<header class="major">
@@ -330,20 +382,106 @@
 							</footer>
 
 						</section>
-
+-->
 				</article>
 
 			<!-- CTA -->
-				<section id="cta">
+				<section id="cta" style="background-image: url('images/retrobackgroundbig_1.jpg'); background-position: bottom center; background-size: cover; background-repeat: no-repeat; background-color: #000; color: #fff;">
 
 					<header>
-						<h2>Ready to do <strong>something</strong>?</h2>
-						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+						<h2><strong>EDUCATION AND WORK HISTORY</strong></h2>
 					</header>
+
+					<header>
+						<h2><strong>WORK HISTORY</strong></h2>
+					</header>
+					<div class="row gtr-50">
+						<div class="col-4 col-12-narrower">
+							<p>
+								<a class="image" ><img src="images/playground.jpg" alt="" /></a><br />
+								<strong>Playground Games</strong><br/>
+								June 2020 - September 2021<br/>
+								June 2022 - Present
+							</p>
+						</div>
+						<div class="col-8 col-12-narrower">
+							<p>
+							Working alongside an award-winning games studio developing triple A video games. Engineering on the tools team in predominantly C#. Working as part of the Systems team and supporting the wider studio with our Tools and Systems.
+							</p>
+							<p>
+							Responsible for delivering new software / tools and features to the existing tools set along with planning the technical design. Along with the wider team, ensured our internal users could use the features within the tools and systems. Responsible for raising bugs to the correct teams to allow the correct systems to get fixed or have issues made aware of. Updated and added to documentation.
+							</p>
+						</div>
+					</div>
+
+					<div class="row gtr-50">
+						<div class="col-4 col-12-narrower">
+							<p>
+								<a class="image" ><img src="images/posm-logo-white-colourcutout.png" alt="" /></a><br />
+								<strong>POSM UK Ltd</strong><br/>
+								May 2019 - June 2020<br/>
+								(Flexible Working during University)
+							</p>
+						</div>
+						<div class="col-8 col-12-narrower">
+							<p>
+								I worked with an award-winning team on their software and production of new software. Programmed in C#, Java, Kotlin and JavaScript.
+							</p>
+						</div>
+					</div>
+
+					<p></p>
+					<header>
+						<h2><strong>EDUCATION HISTORY</strong></h2>
+					</header>
+					<div class="row gtr-50">
+						<div class="col-4 col-12-narrower">
+							<p>
+								<a class="image" ><img src="images/staffs_logo.png" alt="" /></a><br />
+								<strong>Staffordshire University</strong><br/>
+								September 2017 - June 2022
+							</p>
+						</div>
+						<div class="col-8 col-12-narrower">
+							<p>
+								Studied Computer Games Development as part of a BSc (Hons) at Staffordshire University. Became knowledgeable in Unreal Engine 4, Unity, C#, C++, SDL & OpenGL, fundamentals of games development and software engineering. I achieved a First Class with Honours BSc achieving firsts in all degree modules.
+							</p>
+						</div>
+					</div>
+
+					<div class="row gtr-50">
+						<div class="col-4 col-12-narrower">
+							<p>
+								<a class="image" ><img src="images/StokeOnTrentCollege.png" alt="" /></a><br />
+								<strong>Stoke-on-Trent College</strong><br/>
+								September 2007 - June 2009
+							</p>
+						</div>
+						<div class="col-8 col-12-narrower">
+							<p>
+								I studied at Stoke-on-Trent college focusing on Software with some light programming during a Diploma in ICT and Software. I achieved a C grade.
+							</p>
+						</div>
+					</div>
+
+					<div class="row gtr-50">
+						<div class="col-4 col-12-narrower">
+							<p>
+								<strong>Brownhills high school</strong><br/>
+								September 2002 - June 2007
+							</p>
+						</div>
+						<div class="col-8 col-12-narrower">
+							<p>
+								I received GCSEs in English (C), Maths (C), Science (C) and ICT (B) from Brownhills, with overall 7 GCSEs C or higher.
+							</p>
+						</div>
+					</div>
+
+					<p></p>
 					<footer>
 						<ul class="buttons">
-							<li><a href="#" class="button primary">Take My Money</a></li>
-							<li><a href="#" class="button">LOL Wut</a></li>
+							<li><a href="https://www.linkedin.com/in/scottgarryfoster/" class="button primary">Connect on Linkedin</a></li>
 						</ul>
 					</footer>
 
@@ -361,7 +499,9 @@
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2023 Scott Foster</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li><a href="https://www.freepik.com/free-vector/red-grid-neon-patterned-background-vector_28428400.htm#page=8&query=80s%20retro%20city&position=45&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik</li>
+						<li><a href="https://www.vecteezy.com/free-png/laser">Laser PNGs by Vecteezy</a></li>
 					</ul>
 
 				</footer>
