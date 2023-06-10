@@ -25,20 +25,55 @@ body, #footer
 
 #main
 {
-    /*background-image: url("images/layout/stars1.png"), url("images/layout/stars2.png");
-    background-position: top left, top right;
-    background-repeat: no-repeat;
-    background-size: 500px;*/
-    background-image: url("images/layout/lines.png"), url("images/layout/lines2.png");
     background-position: top center, bottom center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+.no-webp #main
+{
+    background-image: url("images/layout/lines.png"), url("images/layout/lines2.png");
+}
 
-#banner
+.webp #main
+{
+    background-image: url("images/layout/lines.webp"), url("images/layout/lines2.webp");
+}
+
+.style2, #cta
+{
+    text-shadow: 2px 2px #5d5d5d;
+}
+
+#cta
+{
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #fff;
+}
+
+.no-webp #cta
+{
+    background-image: url('images/retrobackgroundbig_1.jpg');
+}
+
+.webp #cta
+{
+    background-image: url('images/retrobackgroundbig_1.webp');
+}
+
+.no-webp #banner
 {
     background-image: url("images/CyberpunkBackground.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.webp #banner
+{
+    background-image: url("images/CyberpunkBackground.webp");
     background-size: cover;
     background-position: center center;
 }
@@ -105,12 +140,14 @@ a.socialicon:hover, a.socialicon:active
     background: #642FA8;
     border-color: #FCFD40;
     color: #FCFD40 !important;
+    text-shadow: none !important;
 }
 
 a.button.primary:hover {
     background: #FCFD40;
     border-color: #642FA8;
     color: #642FA8 !important;
+    text-shadow: none !important;
 }
 
 input[type="button"].primary,
@@ -121,6 +158,7 @@ button.primary,
     background: #642FA8 !important;
     border-color: #FCFD40 !important;
     color: #FCFD40 !important;
+    text-shadow: none !important;
 }
 
 input[type="button"].primary:hover,
@@ -131,20 +169,61 @@ button.primary:hover,
     background: #FCFD40 !important;
     border-color: #642FA8 !important;
     color: #642FA8;
+    text-shadow: none !important;
 }
 
-.wrapper.style2.retro1, .wrapper.style2.retro2
+.wrapper.style2.retro1, .wrapper.style2.retro2, .wrapper.style2.retro3, .wrapper.style2.retro4, .wrapper.style2.retro5
 {
     background-size: cover;
     background-position: center center;
 }
 
-.wrapper.style2.retro1
+.no-webp .wrapper.style2.retro1
 {
     background-image: url('images/retrobackground_1.jpg');
 }
 
-.wrapper.style2.retro2
+.webp .wrapper.style2.retro1
+{
+    background-image: url('images/retrobackground_1.webp');
+}
+
+.no-webp .wrapper.style2.retro2
 {
     background-image: url('images/retrobackground_2.jpg');
+}
+
+.webp .wrapper.style2.retro2
+{
+    background-image: url('images/retrobackground_2.webp');
+}
+
+.no-webp .wrapper.style2.retro3
+{
+    background-image: url('images/retrobackground_3.jpg');
+}
+
+.webp .wrapper.style2.retro3
+{
+    background-image: url('images/retrobackground_3.webp');
+}
+
+.no-webp .wrapper.style2.retro4
+{
+    background-image: url('images/retrobackground_4.jpg');
+}
+
+.webp .wrapper.style2.retro4
+{
+    background-image: url('images/retrobackground_4.webp');
+}
+
+.no-webp .wrapper.style2.retro5
+{
+    background-image: url('images/retrobackground_5.jpg');
+}
+
+.webp .wrapper.style2.retro5
+{
+    background-image: url('images/retrobackground_5.webp');
 }
