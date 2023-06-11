@@ -24,7 +24,7 @@ var modelImagesParent = document.getElementsByClassName("modelImagesFromParent")
 for(var i = 0; i < modelImagesParent.length; ++i)
 {
     var img = modelImagesParent[i];
-    var imgParent = img.parentNode;
+    var imgParent = img.parentNode.parentNode;
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
     imgParent.onclick = function(){
