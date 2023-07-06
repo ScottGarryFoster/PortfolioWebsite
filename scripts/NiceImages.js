@@ -5,6 +5,10 @@ var modal = document.getElementById("myModal");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var modelImages = document.getElementsByClassName("modelImages");
 
+// Make an image
+// Add modelImages ID
+// Add alt text as the text at the bottom
+// Image will be the src or data-image will be the image.
 for(var i = 0; i < modelImages.length; ++i)
 {
     var img = modelImages[i];
@@ -13,6 +17,10 @@ for(var i = 0; i < modelImages.length; ++i)
     img.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
+        if (typeof this.dataset.image !== 'undefined')
+        {
+            modalImg.src = this.dataset.image;
+        }
         captionText.innerHTML = this.alt;
     }
 }
